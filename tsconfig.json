@@ -1,0 +1,16 @@
+{
+  "include": ["./src"],
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "moduleResolution": "Node", // 模块解析方式
+    "target": "ES5", // 编译目标
+    "module": "commonjs",
+    "declaration": true, // 生成 .d.ts 文件
+    "emitDeclarationOnly": true, // 只生成类型声明，不输出编译后的 JS
+    "declarationDir": "./dist", //指定输出目录
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true, //强制在导入模块时区分文件名的大小写
+    "strict": true, //启用 TypeScript 的严格模式
+    "skipLibCheck": true //跳过对声明文件（.d.ts 文件）的类型检查
+  }
+}
